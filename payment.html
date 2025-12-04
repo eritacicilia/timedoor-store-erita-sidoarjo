@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - Timedoor Store</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="payment.css" type="text/css"> <!-- CSS khusus payment -->
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1 onclick="window.location.href='index.html'" style="cursor: pointer;">Timedoor Store</h1>
+    <nav>
+      <a href="dashboard.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <!-- MAIN PAYMENT FORM -->
+  <main>
+    <section class="contact-section">
+      <h2>Payment Information</h2>
+      <p>Please fill in your details to complete the purchase.</p>
+      <form id="payment-form" class="contact-form">
+        <label>
+          Full Name
+          <input type="text" name="name" required placeholder="Your full name">
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          Shipping Address
+          <textarea name="address" required placeholder="Street, City, ZIP"></textarea>
+        </label>
+
+        <label>
+          Card Number
+          <input type="text" name="card" required placeholder="1234 5678 9012 3456" maxlength="19">
+        </label>
+
+        <label>
+          Expiration Date
+          <input type="text" name="expiry" required placeholder="MM/YY" maxlength="5">
+        </label>
+
+        <label>
+          CVV
+          <input type="text" name="cvv" required placeholder="123" maxlength="4">
+        </label>
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 Timedoor Store. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script> <!-- JS utama, untuk cart dan toast -->
+  <script src="payment.js"></script> <!-- JS khusus payment -->
+</body>
+</html>

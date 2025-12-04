@@ -1,0 +1,418 @@
+/* =====================
+   DESIGN SYSTEM
+===================== */
+:root {
+  --green: #16a34a;        /* primary green */
+  --green-dark: #15803d;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e5e7eb;
+  --radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+  background: var(--green);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav a {
+  color: #dcfce7;
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* =====================
+   MAIN
+===================== */
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 48px 20px;
+}
+
+/* =====================
+   JUMBOTRON
+===================== */
+.jumbotron {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.jumbotron h2 {
+  font-size: 36px;
+  color: var(--green-dark);
+}
+
+.jumbotron p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+/* =====================
+   HERO / INTRO
+===================== */
+.model-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.model-container img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.model-container p {
+  color: var(--muted);
+}
+
+/* =====================
+   BUTTON
+===================== */
+button,
+.learn-more-button {
+  background: var(--green);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: var(--green-dark);
+  transform: translateY(-1px);
+}
+
+/* =====================
+   PRODUCT
+===================== */
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.product {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  text-align: center;
+  transition: 0.25s;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.product p {
+  font-weight: 600;
+}
+
+/* ===== ABOUT ===== */
+.about-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.about-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+/* CARD HIJAU */
+.about-card {
+  background: #16a34a; /* hijau */
+  border-radius: 20px;
+  padding: 32px;
+}
+
+/* CONTENT 1 BARIS */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* IMAGE */
+.about-content img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  background: #fff;
+}
+
+/* TEXT */
+.about-text p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+
+/* =====================
+   CONTACT
+===================== */
+/* ===== CONTACT ===== */
+.contact-section {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.contact-section p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: Inter, sans-serif;
+}
+
+/* =====================
+   CART
+===================== */
+.cart-container > div {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+}
+
+.model-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.model-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.model-text p {
+  margin-bottom: 20px;
+}
+
+.learn-more-button {
+  align-self: flex-start; /* TIDAK CENTER */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* MAIN ISI HALAMAN */
+main {
+  flex: 1;
+}
+
+/* FOOTER */
+footer {
+  background: #16a34a;        /* hijau */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* sticky footer layout */
+html, body { height:100%; }
+body { display:flex; flex-direction:column; min-height:100vh; }
+main { flex:1; }
+
+/* small niceties */
+.buy-button { background: var(--green); color:#fff; border:none; padding:10px 14px; border-radius:10px; cursor:pointer; }
+
+.toast {
+  background-color: var(--green);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin-top: 10px;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px 20px;
+}
+
+.landing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* KIRI: teks + button */
+.landing-text h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.landing-text button {
+  padding: 14px 28px;
+  font-size: 18px;
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.landing-text button:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+/* KANAN: gambar */
+.landing-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* RESPONSIVE: layar kecil → satu kolom */
+@media (max-width: 768px) {
+  .landing-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .landing-image {
+    margin-top: 24px;
+  }
+}
+
+
+
+
+
+

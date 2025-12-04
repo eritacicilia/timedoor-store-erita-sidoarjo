@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timedoor Store</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="toast-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;"></div>
+
+
+<header>
+    <h1 onclick="window.location.href='index.html'" style="cursor: pointer;">
+        Timedoor Store
+    </h1>
+    <nav>
+        <a href="dashboard.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ===== JUMBOTRON ===== -->
+    <section class="jumbotron">
+        <h2>Welcome to Our Store</h2>
+        <p>Explore our wide range of products. Click on a product to view details!</p>
+    </section>
+
+    <!-- ===== INTRO SECTION ===== -->
+    <section class="model-container">
+
+  <div class="model-text">
+    <p>
+      Selamat datang di Timedoor Store, toko fashion yang dirancang khusus untuk
+      para peserta coding dan teknologi! Kami menghadirkan kaos 100% katun
+      berkualitas tinggi yang nyaman, tahan lama, dan ramah kulit.
+      <br><br>
+      Jangan lewatkan kesempatan untuk memiliki kaos terbaik yang menyatukan
+      fashion dan teknologi hanya di Timedoor Store.
+    </p>
+
+    <button onclick="window.location.href='about.html'" class="learn-more-button">
+      Learn More
+    </button>
+  </div>
+
+  <img src="assets/painting.png" alt="Model Image" />
+
+    </section>  
+
+    <!-- ===== PRODUCT SECTION ===== -->
+    <h2 style="text-align:center; margin-bottom:24px;">Products</h2>
+
+    <section id="product-list">
+
+        <div class="product" onclick="goToProductDetail(1)">
+            <img src="assets/product-1.png" alt="Product 1">
+            <p>Product 1 - $10</p>
+            <button class="buy-button"
+                onclick="addToCartById(1); event.stopPropagation();">
+                Buy Me 
+            </button>
+
+        </div>
+
+        <div class="product" onclick="goToProductDetail(2)">
+            <img src="assets/product-2.png" alt="Product 2">
+            <p>Product 2 - $20</p>
+            <button class="buy-button"
+                onclick="addToCartById(2); event.stopPropagation();">
+                Buy Me 
+            </button>
+        </div>
+
+        <div class="product" onclick="goToProductDetail(3)">
+            <img src="assets/product-3.png" alt="Product 3">
+            <p>Product 3 - $30</p>
+            <button class="buy-button"
+                onclick="addToCartById(3); event.stopPropagation();">
+                Buy Me 
+            </button>
+        </div>
+
+        <div class="product" onclick="goToProductDetail(4)">
+            <img src="assets/product-4.png" alt="Product 4">
+            <p>Product 4 - $40</p>
+            <button class="buy-button"
+                onclick="addToCartById(4); event.stopPropagation();">
+                Buy Me 
+            </button>
+        </div>
+
+        <div class="product" onclick="goToProductDetail(5)">
+            <img src="assets/product-5.png" alt="Product 5">
+            <p>Product 5 - $50</p>
+            <button class="buy-button"
+                onclick="addToCartById(5); event.stopPropagation();">
+                Buy Me 
+            </button>
+        </div>
+
+        <div class="product" onclick="goToProductDetail(6)">
+            <img src="assets/product-6.png" alt="Product 6">
+            <p>Product 6 - $60</p>
+            <button class="buy-button"
+                onclick="addToCartById(6); event.stopPropagation();">
+                Buy Me 
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 Timedoor Store. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Detail - Timedoor Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toast-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;"></div>
+
+  <!-- header as above -->
+  <header>
+    <h1 onclick="window.location.href='dashboard.html'" style="cursor:pointer">Timedoor Store</h1>
+    <nav>
+      <a href="dashboard.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="cart.html" class="cart-link">Cart</a>
+    </nav>
+  </header>
+
+  <main style="max-width:900px;margin:40px auto;padding:0 20px;">
+    <h2 id="product-title">Product Title</h2>
+
+    <div style="display:flex;gap:32px;align-items:flex-start;margin-top:20px;">
+      <img id="product-img" src="" alt="Product Image" style="width:360px;max-width:100%;border-radius:12px;border:1px solid var(--border)">
+      <div>
+        <p id="product-description">Product description</p>
+        <p style="font-weight:700;margin-top:16px">Price: $ <span id="product-price-value">0</span></p>
+        <button id="add-to-cart-button" class="buy-button" style="margin-top:14px;padding:12px 20px;border-radius:12px;background:var(--green);color:white;border:none;cursor:pointer">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Timedoor Store. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
