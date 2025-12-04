@@ -4,39 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timedoor Store</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="landing.css" type="text/css">
 </head>
 <body>
-
   <header>
-    <h1 onclick="window.location.href='index.html'" style="cursor:pointer;">Timedoor Store</h1>
-    <nav>
-      <a href="dashboard.html">Enter Store</a>
-    </nav>
+    <h1>Timedoor Store</h1>
   </header>
 
-  <!-- MAIN LANDING -->
   <main id="landing-page">
     <div class="landing-container">
-      <!-- Kiri: teks + tombol -->
+      <!-- KIRI: teks + button -->
       <div class="landing-text">
         <h1>Welcome to Timedoor Store</h1>
-        <button id="enter-store">Enter Store</button>
+        <button id="enter-store">Enter the Store</button>
       </div>
 
-      <!-- Kanan: gambar -->
+      <!-- KANAN: gambar -->
       <div class="landing-image">
-        <img src="assets/cobee.png" alt="Cobee Image">
+        <img src="assets/jumbotron/kobi.png" alt="Kobi Image">
       </div>
     </div>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <p>&copy; 2024 Timedoor Store. All Rights Reserved.</p>
   </footer>
 
-  <!-- JS -->
   <script src="script.js"></script>
+  <script>
+    document.getElementById("enter-store").addEventListener("click", () => {
+      window.location.href = "dashboard.html";
+    });
+  </script>
 </body>
 </html>
